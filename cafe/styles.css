@@ -8,11 +8,12 @@ h1 {
   font-size: 40px;
 }
 h2 {
-  font-size: 30px:
+  font-size: 30px;
 }
 body {
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
   font-family: sans-serif;
+  padding: 20px;
 }
 .menu {
   width: 80%;
@@ -35,4 +36,9 @@ body {
 }
 .established {
   font-style: italic;
+}
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
 }
