@@ -1,0 +1,89 @@
+div {
+    text-align: center;
+    width:80%;
+    margin-right: auto;
+    max-width: 500px;
+    margin-left: auto;
+    padding: 20px;
+    background-color: #6B8B53;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    background-image: url(https://cdn.discordapp.com/attachments/994428921841983528/1022161600658018435/unknown.png);
+    background-size: cover;
+}
+
+hr {
+    border-color: #6B8B53;
+    height: 4px;
+    background-color: darkgreen;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.caution {
+    margin-top: -20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.step {
+    width: 20%;
+    text-align: left;
+}
+
+.instruction {
+    width: 80%;
+    text-align: right;
+}
+
+a {
+    color: #052416;
+}
+
+a:visited {
+    color: darkolivegreen;
+}
+
+a:hover {
+    color: yellowgreen;
+}
+
+a:active{
+    color: yellow;
+}
+
+img {
+    margin-top: -19px;
+}
+
+.too-thicc p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.bottom-line {
+    margin-top: 30px;
+}
+
+h1, h2 {
+    font-family: Trebuchet MS;
+}
