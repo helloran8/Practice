@@ -5,6 +5,7 @@ div {
     max-width: 500px;
     margin-left: auto;
     padding: 20px;
+    padding-bottom: 10px;
     background-color: #6B8B53;
 }
 
@@ -30,6 +31,7 @@ h1 {
 h2 {
     font-size: 30px;
     margin-bottom: 25px;
+    margin-top: 10px;
 }
 
 .caution {
@@ -60,7 +62,7 @@ a {
 }
 
 a:visited {
-    color: darkolivegreen;
+    color: rgb(61, 82, 26);
 }
 
 a:hover {
@@ -87,3 +89,12 @@ img {
 h1, h2 {
     font-family: Trebuchet MS;
 }
+
+.method {
+    margin-top: 10px;
+}
+
+section {
+    margin-bottom: -5px;
+}
+
