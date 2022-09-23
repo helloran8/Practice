@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" width="device-width, initial-size=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Annual ZAS Form</title>
+
+  </head>
+  <body>
+    <header>
+    <h1 id="title">Zombie Apocalypse Shelter Form</h1>
+    <p id="description">Thank you for participating in the annual Zombie Apocalypse Shelter form. Your time is greatly valued.</p>
+    </header>
+    <main>
+      <form id="survey-form" action="https://google.com">
+        <label id="name-label" for="name">Name:
+          <input id="name" type="text" name="name" placeholder="Enter Your Name" required />
+        </label>
+        <label id="email-label" for="email">Email:
+          <input id="email" type="email" name="email" placeholder="Enter Your Email" required />
+        </label>
+        <label id="number-label" for="number">Age:
+          <input id="number" type="number" name="age" min="13" max="200" required placeholder="13" />
+        </label>
+        <label>
+          Gender:
+          <label for="male">
+            <input type="radio" id="male" value="male" name="gender" class="inline" required />Male
+          </label>  
+          <label for="female">
+            <input type="radio" id="female" value="female" class="inline" name="gender" />Female  
+          </label>
+          <label for="other">
+            <input type="radio" id="other" value="other" name="gender" class="inline" />Other  
+          </label>    
+        </label>    
+        
+          
+        
+        <label for="dropdown">Do you know any family or friends who show symptoms of infection?
+        <select id="dropdown" required>
+          <option value="">(select one)</option>
+          <option value="0">Yes</option>
+          <option value="1">No</option>
+          <option value="2">Uncertain</option>
+        </select>
+        </label>
+        <label for="extra-info">Please enter any concerns or observations regarding others if applicable:
+        <textarea rows="4" cols="50" placeholder="A family member or friend has observed symptoms..."></textarea>
+        </label>
+    
+        <label>
+        Please check any symptoms you have, including ones you are unsure about.
+          <label for="numbness">
+            <input type="checkbox" name="symptoms" id="numbness" value="numbness" class="inline" />Numbness or itchiness in any part of the body
+          </label>
+          <label for="appetite">
+            <input type="checkbox" name="symptoms" id="appetite" value="appetite" class="inline" />Change in appetite
+          </label>
+          <label for="behavior">
+            <input type="checkbox" name="symptoms" id="behavior" value="behavior" class="inline" />Change in emotional state or behavior
+          </label>
+          <label for="senses">
+            <input type="checkbox" name="symptoms" id="senses" value="senses" class="inline" />Loss of sense
+          </label>
+          <label for="fatigue">
+            <input type="checkbox" name="symptoms" id="fatigue" value="fatigue" class="inline" />Fatigue in any part of the body
+          </label>
+          <label for="paleness">
+            <input type="checkbox" name="symptoms" id="paleness" value="paleness" class="inline" />Paleness or discoloration of the skin
+          </label>
+          <label for="memory">
+            <input type="checkbox" name="symptoms" id="memory" value="memory" class="inline" />Memory loss or memory displacement
+          </label>
+          <label for="fever">
+            <input type="checkbox" name="symptoms" id="fever" value="fever" class="inline" />Headache or fever
+          </label>
+          <label for="none">
+            <input type="checkbox" name="symptoms" id="none" value="none" class="inline" required />No symptoms
+          </label>
+        </label>
+        
+
+        <label for="supplies">
+          Enter supplies of need:
+          <textarea id="supplies" name="supplies" rows="4" cols="50" placeholder="Food, water, weapons, ammo, clothes..."></textarea>
+          
+        </label>
+        
+    
+        
+        
+
+        <p>To ensure the safety of the Shelter, all information in this form must be completely correct and filled out to the best of your ability. This information will not be shared in public.</p>
+        <label>
+          <input type="checkbox" required name="vow" id="vow" class="inline" value="terms">I vow that I have completed this form accurately and truthfully.
+        <input id="submit" type="submit" name="submit" value="Submit" />
+      </form>
+    </main>
+    <footer>
+      
+    </footer>
+  </body>
+</html>

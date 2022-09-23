@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+div {
+    width: 500px;
+    height: 100vh;
+    background-color: white;
+    margin: 0 auto;
+}
+
+p {
+    color: purple;
+    font-size: 2em;
+    background-color: lightcoral;
+    /* p has some default margin that overrides any margin changes from body */
+    margin: 20px auto;
+    width: 80%;
+}
+

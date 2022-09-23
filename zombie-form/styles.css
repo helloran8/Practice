@@ -1,0 +1,110 @@
+body {
+    /* these properties make it so that the website takes up the full space? 
+    Not sure why this isn't the case by default */
+    /* Nevermind, it is the case by default. 
+    Even without these below properties the page would take up the full page width/height */
+    width: 100%;
+    height: 100vh;
+    /* doing this gets rid of the horizontal scroll-bar because it gets rid of the default margin
+    that some browsers include */
+    margin: 0;
+    
+    background-color: #1b1b32;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+  }
+  
+  label {
+    /* label elements are inline by default
+    so they appear on the same line side-by-side making the code hard to read. Make them into block 
+    so that they are on separate lines and easier to read. */
+    display: block;
+    
+    /* add margin to separate them from each other vertically */
+    margin: 0.5rem 0;
+  }
+  
+  h1, p {
+    /* centers these elements by adjusting their margin. horizontal margin set to auto makes it auto-centered */
+    /* NOTE: setting horizontal margin to auto does nothing 
+    in this case because the headers and p element have 0 margin.*/
+    margin: 1em auto; 
+    text-align: center;
+  }
+  
+  form {
+    /* centers and sets max width/height and width. Does not actually center the text within the form element */
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+  
+     /* adds padding so button isnt sitting on the bottom */
+     padding-bottom: 2em;
+  }
+  
+  fieldset {
+    border: 0;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+  }
+  
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+  
+  input,
+  textarea,
+  select {
+    /* has the label text appear above the form elements. */
+    width: 100%;
+    margin: 10px 0 0 0; 
+    /* changes the height of the font so that it matches the label text */
+    min-height: 2em;
+  }
+  
+  .inline {
+    /* puts the input elements on the same line */
+    /* unsetting the width removes the earlier rule that sets all the input elements to width: 100% */
+    width: unset;
+  
+    /* add some space btwn the inline elements and the label text */
+    margin: 0 0.5em 0 0;
+    
+    /* inline elements are too high on the line. vertically align them. */
+    vertical-align: middle;
+  }
+  
+  input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+  
+   
+  } 
+  
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+  
+    /* centers the button and adds some margin space to the top of it */
+    /* why does this not add margin space to the bottom of the button? */
+    margin: 1em auto;
+  
+   
+  
+  }
+  
+  input[type="file"] {
+    padding: 1px 2px;
+  }
+  
+  a {
+    color: #dfdfe2;
+  }

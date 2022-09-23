@@ -94,6 +94,7 @@ input[type="submit"] {
   min-width: 300px;
 
   /* centers the button and adds some margin space to the top of it */
+  /* why does this not add margin space to the bottom of the button? */
   margin: 1em auto;
 
  
