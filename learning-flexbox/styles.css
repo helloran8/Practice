@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+.gallery img {
+    /* doesn't get too big but can also shrink as needed. */
+    width: 100%;
+    max-width: 350px; 
+    height: 300px;
+    /* tells the image to fill the img container while maintaining aspect ratio 
+    crops the images*/
+    object-fit: cover;
+
+    /* smooths out the edges */
+    border-radius: 10px;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f6f7;
+}
+
+.header {
+    text-align: center;
+    text-transform: uppercase;
+
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+
+    border-bottom: 4px solid #fdb347;
+}
+
+.gallery {
+  display: flex;
+  /* row (default): horizontal axis with flex items from left to right
+  row-reverse: horizontal axis with flex items from right to left
+  column: vertical axis with flex items from top to bottom
+  column-reverse: vertical axis with flex items from bottom to top */
+  flex-direction: row;
+  
+  /* wrap will move the flex items to the next column or row when the flex container
+  runs out of space. nowrap will disable this feature. */
+  flex-wrap: wrap;
+
+  /* determines how items inside a flex container are positioned along the main axis.
+  this affects their position and the space around them */
+  justify-content: center;
+
+  /* in this case, vertically aligns images to center. align-items works on the cross-axis
+  not the center axis. */
+  align-items: center;
+
+  padding: 20px 10px;
+  max-width: 1400px;
+  margin: 0 auto;
+  
+  gap: 16px;
+  
+ 
+  
+}
+
+.gallery::after {
+    content: "";
+    width: 350px;
+}
