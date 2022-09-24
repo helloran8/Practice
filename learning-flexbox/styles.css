@@ -62,6 +62,8 @@ body {
   
 }
 
+/* this is a pseudo element that pushes the last image to the left in the case 
+of a 2 column layout */
 .gallery::after {
     content: "";
     width: 350px;
