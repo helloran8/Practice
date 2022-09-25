@@ -17,6 +17,7 @@
   /* background-color: lightpink; */
 }
 
+
 section {
   background-color: lightblue;
 }
@@ -106,4 +107,5 @@ ul li {
 
 body {
   padding-bottom: 30px;
+  margin-top: 30px;
 }
