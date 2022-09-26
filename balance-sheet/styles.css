@@ -1,0 +1,220 @@
+html {
+  /* reset the box model */
+  box-sizing: border-box;
+}
+
+body {
+  /* style the font of the body */
+  font-family: sans-serif;
+  color: #0a0a23;
+}
+
+/* the purpose of this class is to hide elements visually but still be announced by screen readers */
+span[class~="sr-only"] {
+  /* this is a common set of properties used to ensure elements are completely hidden visually. */
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  /* these form the clip path into a rectangle within the element */
+  clip-path: inset(50%) !important;
+  -webkit-clip-path: inset(50%) !important;
+
+  /* these elements need to be sized down */
+  width: 1px !important;
+  height: 1px !important;
+
+  /* prevent text content from overflowing */
+  overflow: hidden !important;
+  white-space: nowrap !important;
+
+  /* take these hidden elements out of the document flow. */
+  position: absolute !important;
+  padding: 0 !important;
+  margin: -1px !important;
+}
+
+h1 {
+  /* style the header */
+  max-width: 37.25rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem;
+}
+
+
+/* unbold the span elements that are bolded.
+/* :not() is used so earlier rules of span[class~="sr-only"] are not overwritten 
+span {
+  font-weight: normal;
+} */
+
+h1 .flex {
+  /* switch around the positions of acmewidgetcorp and balance sheet in the header*/
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+
+}
+
+/* this targets the first span element in my flex container. (this would be acmewidgetcorp) */
+h1 .flex span:first-of-type {
+  font-size: 0.7em;
+}
+
+/* this targets the last span element in my flex container (balance sheet) */
+h1 .flex span:last-of-type {
+  font-size: 1.2em;
+}
+
+/* style the main table */
+section {
+  /* responsive design */
+  max-width: 40rem;
+  margin: 0 auto;
+  
+  /* give the main table a border */
+  border: 2px solid #d0d0d5;
+}
+
+/* style the years heading on top of the table */
+#years {
+  display: flex;
+  justify-content: flex-end;
+
+  /* makes this heading stick to the top even when you scroll */
+  position: sticky;
+  top: 0;  
+
+  /* style it */
+  color: #fff;
+  background: #0a0a23;
+
+  /* ensure these elements dont get hidden */
+  z-index: 999;
+
+  /* style it */
+  margin: 0 -2px; 
+  padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+}
+
+/* style the years header actual text*/
+#years span[class] {
+  font-weight: bold;
+  width: 4.5rem;
+  text-align: right;
+}
+
+/* style the main table a bit */
+.table-wrap {
+  padding: 0 0.75rem 1.5rem 0.75rem;
+}
+
+/* style the tables */
+table {
+  /* allows cell borders to collapse into a single border instead of a border around each cell */
+  border-collapse: collapse;
+
+  /* hide borders */
+  border: 0;
+
+  /* ensure table fills the container */
+  width: 100%;
+
+  /* position it relatively and add margin*/
+  position: relative;
+  margin-top: 3rem;
+}
+
+/* style captions to make them look more like headers */
+table caption {
+  color: #356eaf;
+  font-size: 1.3em;
+  font-weight: normal;
+
+  /* position them */
+  position: absolute; 
+  top: -2.25rem; 
+  left: 0.5rem;
+}
+
+/* size the data cells */
+tbody td {
+  /* ensures that the width is fixed, need to use this strategy to set width because flexbox is being used. */
+  width: 100vw;
+  max-width: 4rem;
+  min-width: 4rem;
+}
+
+/* change the width of the cell headers */
+tbody th {
+  width: calc(100% - 12rem);
+}
+
+/* make a double border at the end of the total rows and make the font bold. */
+tr[class="total"] {
+  border-bottom: 4px double #0a0a23;
+  font-weight: bold;
+}
+
+/* aligns the total */
+tr[class="total"] th {
+  text-align: left;
+  padding: 0.5rem 0 0.25rem 0.5rem;
+}
+
+/* targets all td elements in the total row. */
+tr.total td {
+  /* alignment and padding */
+  text-align: right;
+  padding: 0 0.25rem;
+}
+
+/* add padding to the total data row */
+/* target the third data element of the "total" class table rows */
+tr.total td:nth-of-type(3) {
+  padding-right: 0.5rem;
+}
+
+/* hover effect on the total row */
+tr.total:hover {
+  background-color: #99c9ff;
+}
+
+/* make the current data italic */
+td[class="current"] {
+  font-style: italic;
+}
+
+/* give a grey background to data rows */
+tr[class="data"] {
+  background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
+}
+
+/* position the headers of the table rows */
+tr.data th {
+  text-align: left;
+  padding-top: 0.3rem; 
+  padding-left: 0.5rem;
+}
+
+/* target the description headers, position and style them */
+tr.data th .description {
+  /* styles */
+  display: block;
+  font-style: italic;
+  font-weight: normal;
+
+  /* positions */
+  padding: 1rem 0 0.75rem;
+  margin-right: -13.5rem;
+}
+
+/* dollar amounts got misaligned when i turned the headers into block */
+tr.data td {
+  vertical-align: top;
+  text-align: right;
+  padding: 0.3rem 0.25rem 0;
+}
+
+/* give the last data elements some right padding so they aren't sticking to the edge so tightly */
+tr.data td:last-of-type {
+  padding-right: 0.5rem;
+}
