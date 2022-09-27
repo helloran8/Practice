@@ -1,0 +1,113 @@
+/* reset the box model */
+html {
+  box-sizing: border-box;
+}
+
+/* need to pass on the rest box model to the elements within */
+/* inherits settings from the parent. * targets all elements and the parent of all elements is html */
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+/* give the piano content and position it */
+#piano {
+  /* give the piano matter */
+  background-color: #00471b;
+  width: 992px;
+  height: 290px; 
+
+  /* position the piano */
+  margin: 80px auto;
+
+  /* move the keys into position */
+  padding: 90px 20px 0 20px;
+
+  /* the img element needs the parent to serve as a point of reference */
+  position: relative;
+
+  /* smoothen the edges of the piano*/
+  border-radius: 10px;
+}
+
+/* this class is the container for all the individual .key */
+.keys {
+  /* give the keys matter */
+  background-color: #040404; 
+  width: 949px; 
+  height: 180px;
+
+  /* pad the keys */
+  padding-left: 2px;
+
+  /* hide the keys that are pushed outside the set width value of .keys */
+  overflow: hidden;
+}
+
+.key {
+  /* give the individual keys some content/matter */
+  background-color: #ffffff; 
+  width: 41px;
+  height: 175px;
+
+  /* position the keys */
+  position: relative;
+  margin: 2px;
+  float: left;
+
+  /* smoothen the edges of the keys */
+  border-radius: 0 0 3px 3px;
+}
+
+/* targets the elements with the class key black--key and selects the pseudoelement after these
+elements in the HTML */
+.key.black--key::after {
+  /* give the keys content */
+  width: 32px;
+  height: 100px;
+  background-color: #1d1e22;
+  /* makes the pseudo-elements empty but still render them*/
+  content: "";
+
+  /* position the keys */
+  position: absolute;
+  left: -18px;
+
+  /* smoothen out to match the keys */
+  border-radius: 0 0 3px 3px;
+}
+
+/* style the logo */
+.logo {
+  /* set the size */
+  width: 200px;
+
+  /* position it */
+  position: absolute;
+  top: 23px;
+}
+
+/* media query that will be applied to the piano when viewport is 768px wide and below */
+@media (max-width: 768px) {
+ #piano {
+  width: 358px;
+ }
+
+ .keys {
+  width: 318px;
+ }
+
+ .logo {
+  width: 150px;
+ }
+}
+
+/* targets a display width between 769px and 1199px */
+@media (max-width: 1199px) and (min-width: 769px) {
+  #piano {
+    width: 675px;
+  }
+
+  .keys {
+    width: 633px;
+  }
+}
