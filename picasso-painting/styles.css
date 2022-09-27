@@ -1,0 +1,372 @@
+
+/* give body bg color */
+body {
+  background-color: rgb(184, 132, 46);
+}
+
+/* style back wall and move it */
+#back-wall {
+  /* matter */
+  width: 100%;
+  height: 60%;
+  background-color: #8B4513;
+
+  /* manually position the back wall */
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* the back wall needs to appear behind the other elements */
+  z-index: -1;
+}
+
+/* give the character matter and move it into place*/
+#offwhite-character {
+  /* give the character some matter */
+  width: 300px;
+  height: 550px;
+  background-color: GhostWhite;
+
+  /* move the character into place */
+  position: absolute;
+  top: 20%;
+  left: 17.5%;
+}
+
+/* create the hat using border properties and move it into place */
+#white-hat {
+  /* style the hat into a triangle using borders */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 120px 140px 180px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: GhostWhite;
+
+  /* move the hat into place */
+  position: absolute;
+  top: -140px;
+  left: 0;
+}
+
+/* design the mask and move it into place */
+#black-mask {
+  /* give the mask some matter */
+  width: 100%;
+  height: 50px;
+  background-color: rgb(45, 31, 19);
+
+  /* move the mask into place */
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* ensure the mask is visible */
+  z-index: 1;
+}
+
+#gray-instrument {
+  /* give the instrument matter */
+  width: 15%;
+  height: 40%;
+  background-color: rgb(167, 162, 117);
+
+  /* move the instrument into place */
+  position: absolute;
+  top: 50px;
+  left: 125px;
+
+  /* ensure the instrument is visible */
+  z-index:1;
+}
+
+/* give the dots matter, turn them into circles and move them into place */
+.black-dot {
+  /* give the dots some matter */
+  width: 10px;
+  height: 10px;
+  background-color: rgb(45, 31, 19);
+
+  /* turn the square dots into circles */
+  border-radius: 50%;
+
+  /* move the dots into place */
+  display: block;
+  margin: auto;
+  margin-top: 65%;
+}
+
+/* give table matter and move it into place */
+#tan-table {
+  /* give the table some matter */
+  width: 450px;
+  height: 140px;
+  background-color: #D2691E;
+
+  /* move the table into place */
+  position: absolute;
+  top: 275px;
+  left: 15px;
+
+  /* ensure the table is visible */
+  z-index: 1;
+}
+
+/* give character matter, move it into place */
+#black-character {
+  /* give the character matter */
+  width: 300px;
+  height: 500px;
+  background-color: rgb(45, 31, 19);
+
+  /* move the character into place */
+  position: absolute;
+  top: 30%;
+  left: 59%;
+}
+
+/* give the black hat some matter, style it, and move it into place */
+#black-hat {
+  /* give the black hat matter, style it into a triangle */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 150px 0 0 300px;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-left-color: rgb(45, 31, 19);
+
+  /* move the hat into place */
+  position: absolute; 
+  top: -150px;
+  left: 0;
+}
+
+/* give the gray mask some matter and position it. */
+#gray-mask {
+  /* give the mask some matter */
+  width: 150px;
+  height: 150px;
+  background-color: rgb(167, 162, 117);
+
+  /* position the mask */
+  position: absolute;
+  top: -10px;
+  left: 70px;
+}
+
+/* set the index of the paper, give it matter and position it */
+#white-paper {
+  /* give the paper some matter */
+  width: 400px;
+  height: 100px;
+  background-color: GhostWhite;
+
+  /* position the paper */
+  position: absolute;
+  top: 250px;
+  left: -150px;
+
+  /* ensure the paper is visible */
+  z-index: 1;
+}
+
+/* adjust the styling of the icons imported a little */
+.fa-music {
+  /* move the icons into place */
+  display: inline-block;
+  margin-top: 8%;
+  margin-left: 13%;
+}
+
+/* gives the shawl elements their color */
+.blue {
+  background-color: #1E90FF;
+}
+
+/* gives matter to the blue left shawl and positions it*/
+#blue-left {
+  /* matter */
+  width: 500px;
+  height: 300px;
+
+  /* position */
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+/* gives the right shawl some matter and position it*/
+#blue-right {
+  /* matter */
+  width: 400px;
+  height: 300px;
+ 
+  /* position */
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}
+
+/* give the orange character content and position it */
+#orange-character {
+  /* give the character content */
+  width: 250px;
+  height: 550px;
+  background-color: rgb(240, 78, 42);
+
+  /* position the orange character */
+  position: absolute;
+  top: 25%;
+  left: 40%;
+}
+
+/* style the black round hat and position it */
+#black-round-hat {
+  /* give it content */
+  width: 180px;
+  height: 150px;
+  background-color: rgb(45, 31, 19);
+  
+  /* turn it into a circle */
+  border-radius: 50%;
+
+  /* position it */
+  position: absolute;
+  top: -100px;
+  left: 5px;
+
+  /* put the hat on the right layer */
+  z-index: -1;
+}
+
+/* style the eyes on the orange character */
+#eyes-div {
+  /* give it content */
+  width: 180px;
+  height: 50px;
+
+  /* move them into position */
+  position: absolute;
+  top: -40px;
+  left: 20px;
+
+  /* put them on the right layer, on top of everything */
+  z-index: 3;
+}
+
+/* give those triangles content, kind of just serves as a container for these triangles*/
+#triangles {
+  width: 250px;
+  height: 550px;
+}
+
+/* style the behavior and visuals of individual triangles */
+.triangle {
+  /* style the individual triangles into a triangle */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 42px 45px 45px 0;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: Gold;
+
+  /* make it so they aren't all just stacked of top of each other */
+  display: inline-block;
+}
+
+/* serves as a container for the guitar */
+#guitar {
+  /* size it */
+  width: 100%;
+  height: 100px;
+
+  /* position the guitar */
+  position: absolute;
+  top: 120px;
+  left: 0px;
+
+  /* correct layer */
+  z-index: 3;
+}
+
+/* this class targets the body parts of the actual guitar */
+.guitar {
+  /* gives it content */
+  width: 150px;
+  height: 120px;
+  background-color: Goldenrod;
+
+  /* makes it circular */
+  border-radius: 50%;
+}
+
+/* position the left half of the guitar */
+#guitar-left {
+  position: absolute;
+  left: 0px;
+}
+
+/* position the right half of the guitar */
+#guitar-right {
+  position: absolute;
+  left: 100px;
+}
+
+/* move the bar icons into place */
+.fa-bars {
+  display: block;
+  margin-top: 30%;
+  margin-left: 40%;
+}
+
+/* style and position the guitar neck */
+#guitar-neck {
+  /* give it content */
+  width: 200px;
+  height: 30px;
+  background-color: #D2691E;
+
+  /* move it into place */
+  position: absolute;
+  top: 45px;
+  left: 200px;
+
+  /* correct layer */
+  z-index: 3;
+}
+
+/* style the eyes and position them, finally */
+.eyes {
+  /* give eyes content */
+  width: 35px;
+  height: 20px;
+  background-color: #8B4513;
+
+  /* make them circular */
+  border-radius: 20px 50%;
+}
+
+/* move the right eyes */
+.right {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
+
+/* move the left eyes */
+.left {
+  position: absolute;
+  top: 15px;
+  left: 30px;
+}
+
+/* the icons are a bit small, make them bigger */
+.fas {
+  font-size: 30px;
+}
