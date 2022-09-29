@@ -9,72 +9,103 @@
   </head>
 
   <body>
-    <nav>
+    <nav id="navbar">
       <header>HTML Documentation</header>
 
       <ul>
-        <li>Introduction</li>
-        <li>Elements</li>
-        <li>Attributes</li>
-        <li>Self-Closing Tags</li>
-        <li>Semantics</li>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Elements">Elements</a></li>
+        <li><a class="nav-link" href="#Attributes">Attributes</a></li>
+        <li><a class="nav-link" href="#Self-Closing_Tags">Self-Closing Tags</a></li>
+        <li class="bottom-border"><a class="nav-link" href="#Semantics">Semantics</a></li>
       </ul>
     </nav>
 
-    <!-- section 1 -->
-    <section>
-      <header>Introduction</header>
-      
-      <article>
-        <p>HTML is a markup language that sets the content and structure of a website. All text in an HTML file should generally be wrapped in tags. What the tags represent are called elements. Elements serve a specific semantic purpose, and the content should align with this purpose.</p>
-
-        Here is an example of a paragraph and an image tag:
-        <code><xmp><p>[Paragraph goes here, without brackets]</p></xmp></code>
-        <code><xmp><img src="[Image link goes here, without brackets]" /></xmp></code>
-
+    <!-- the main content -->
+    <main id="main-doc">
+      <!-- section 1 -->
+      <section id="Introduction" class="main-section">
+        <header>Introduction</header>
         
-      </article>
-    </section>
+        <article>
+          <p>HTML is a markup language that sets the content and structure of a website. All text in an HTML file should generally be wrapped in tags. What the tags represent are called elements. Elements serve a specific semantic purpose, and the content should align with this purpose.</p>
 
-    <!-- section 2 -->
-    <section>
-      <header>Elements</header>
-      
-      <article>
-        <p>Elements serve a specific purpose. For example, these are header elements you would use to emphasize a main idea about the content that follows the header:</p>
-        <code><xmp><h1>[This is a main header! Without brackets]</h1></xmp></code>
-        <code><xmp><h2>[This is header 2! Without brackets]</h2></xmp></code>
+          <p>Here is an example of a paragraph and an image tag:</p>
+          <code>&ltp&gt[Paragraph goes here, without brackets]&lt/p&gt</code>
+          <code>&ltimg src="[Image link goes here, without brackets]" /></code>
 
-        <p>Browsers will usually make each element type have certain style properties, like h1 being displayed with a bold and big font. However, these styles should generally be ignored and removed (in css code) as HTML's main purpose is not to style but to semantically organize content.</p>
-      </article>
-    </section>
+          
+        </article>
+      </section>
 
-    <!-- section 3 -->
-    <section>
-      <header>Attributes</header>
-      
-      <article>
+      <!-- section 2 -->
+      <section id="Elements" class="main-section">
+        <header>Elements</header>
+        
+        <article>
+          <p>Elements serve a specific purpose. For example, these are header elements you would use to emphasize a main idea about the content that follows the header:</p>
+          <code>&lth1>[This is a main header! Without brackets]&lt/h1&gt</code>
+          <code>&lth2>[This is header 2! Without brackets]&lt/h2></code>
+          
+          <p>Here is a list of some other elements:</p>
+          <ul>
+            <li>&lta>[This is a link tag]&lt/a></li>
+            <li>&ltdiv>[This is a div tag, which is used for styling purposes]&lt/div></li>
+            <li>&lttitle>[The title of the webpage, which is nested inside of the head element. Not visible on the webpage itself.]&lt/title></li>
+            <li>&ltbody>[An important tag included on every webpage. The content inside is what is displayed on the webpage.]&lt/body></li>
+            <li>&ltsection>[A section tag that separates main parts of the webpage.&lt/section></li>
+          </ul>
 
-      </article>
-    </section>
+          <p>Browsers will usually give certain elements default style properties, like h1 being displayed with a bold and big font. However, these styles should generally be ignored and removed (in css code) as HTML's main purpose is not to style but to semantically organize content.</p>
+        </article>
+      </section>
 
-    <!-- section 4 -->
-    <section>
-      <header>Self-Closing Tags</header>
-      
-      <article>
+      <!-- section 3 -->
+      <section id="Attributes" class="main-section">
+        <header>Attributes</header>
+        
+        <article>
+          <p>Attributes are additions to elements that can change their behavior or function. They are applied within the first tag of an element and have a value in quotes. Sometimes, they are a necessity for the element, and other times they will simply add extra text to the element.</p>
 
-      </article>
-    </section>
+          <p>Below is a link tag. The link tags do nothing on their own, but the href attribute directs the text to that link once interacted with.</p>
+          <code>&lta href="https://google.com">&lt/a></code>
 
-    <!-- section 5 -->
-    <section>
-      <header>Semantics</header>
-      
-      <article>
+          <p>You can add multiple attributes within one element, separated by spaces. "id", "src", and "alt" are all attributes added to the image element.</p>
+          <code>&ltimg id="cat-photos" src="cats.png" alt="Image of cats" /></code>
+        </article>
+      </section>
 
-      </article>
-    </section>
+      <!-- section 4 -->
+      <section id="Self-Closing_Tags" class="main-section">
+        <header>Self-Closing Tags</header>
+        
+        <article>
+          <p>Typically, elements will have a beginning tag and an ending tag. However, self-closing tags are those that do not have an ending tag. Some examples include the meta or img tag.</p>
+
+          <span>Most tags:</span>
+          <code>&lth1>[Text here]&lt/h1></code>
+          <code>&ltp&gt[This is a paragraph tag with an opening and closing p.]&lt/p&gt</code>
+
+          <span>Self-closing tags:</span>
+          <code>&ltmeta name="viewport" content="width=device-width, initial-scale=1.0" /></code>
+          <code>&ltimg src="cats.png" /></code>
+        </article>
+      </section>
+
+      <!-- section 5 -->
+      <section id="Semantics" class="main-section">
+        <header>Semantics</header>
+        
+        <article>
+          <p>When choosing an element for specific content, it is important to think about the importance of the content in relation to the element's role. As stated earlier, HTML code does not serve to style any content. Therefore, many different elements have the same innate properties but different semantic roles. Content should be assigned tags that best fit their purpose on the webpage.</p>
+
+          <p>A paragraph tag may be used for large blocks of text.</p>
+          <code>&ltp&gtThis is a large paragraph that will serve to be a large paragraph. Why this paragraph is large is because paragraph tags are for blocks of text. Although the paragraph tag can be applied for small bits of text, it would not fit the semantic purpose of a paragraph element. It is important to follow common semantic practices to keep code organized and readable for humans.&lt/p&gt</code>
+
+        </article>
+      </section>  
+    </main>
+    
 
   </body>
 </html>
