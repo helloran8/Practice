@@ -1,0 +1,53 @@
+/* I AM MOST INTERESTED IN HOW KEVIN DOES THE BUTTON, HOW HE MAKES IT RESPONSIVE AND WHAT UNITS HE USES. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+
+}
+
+.container {
+  margin: 0 4rem;
+  width: 60%;
+  max-width: 800px;
+  padding: 6rem 4rem;
+}
+
+.stylish {
+  background: #23424A;
+  color: white;
+
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 32px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.link-button {
+  width: 18rem;
+  background: #38CFD9;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  border-radius: 40px;
+  margin: 4rem 0;
+}
